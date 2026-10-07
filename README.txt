@@ -34,7 +34,7 @@ THE FOUR PAGES
                  digital masjid tabung (once, every Friday or every month,
                  private giving, the masjid's own DuitNow QR), volunteering
                  and a giving record kept on the phone.
-  Kedah Silver Data Blueprint.xlsx   The workbook, as its own file.
+  Silver Economy Data Blueprint.xlsx   The workbook, as its own file.
 
   All pages work in English and Bahasa Melayu. The round palette button
   (top right) offers eight colour and font looks with Malay names: Padi,
