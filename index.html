@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="assets/art/crest.svg" type="image/svg+xml">
+<title>Silver Economy</title>
+<meta name="description" content="Integrated Islamic care for older people. UUM Scale-Up Research Grant 2026.">
+<script>try{var lk=localStorage.getItem('kse-look');if(lk&&lk!=='padi')document.documentElement.setAttribute('data-look',lk)}catch(e){}try{var t=localStorage.getItem('kse-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}(function(){var P=['index','scenario','data','app'],f=(location.pathname.split('/').pop()||'index.html').replace(/\.html$/,''),i=P.indexOf(f),d=document.documentElement;if(i<0)i=0;function go(){try{var p=parseInt(sessionStorage.getItem('kse-idx'),10);d.setAttribute('data-dir',!isNaN(p)&&i<p?'back':'forward');sessionStorage.setItem('kse-idx',i)}catch(e){}}if(document.prerendering)document.addEventListener('prerenderingchange',go,{once:true});else go()})()</script>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/kse.css"><link rel="stylesheet" href="assets/css/kse-ios.css"><link rel="stylesheet" href="assets/css/kse-themes.css"><link rel="stylesheet" href="assets/css/icc.css">
+<script src="assets/js/kse-data.js"></script>
+<script src="assets/js/kse-art.js"></script>
+</head>
+<body data-page="overview">
+<script src="assets/js/kse-shell.js"></script>
+
+<main id="main">
+  <section class="hero hero-ios" id="hero">
+    <figure class="hero-scene" data-scene>
+      <div class="scene-image" data-art="hero"></div>
+      <figcaption class="scene-caption"><span class="scene-pulse" aria-hidden="true"><i></i></span><span data-i18n="sceneCaption">Help should reach people where they live.</span></figcaption>
+    </figure>
+    <div class="hero-sheet">
+      <span class="grabber" aria-hidden="true"></span>
+      <div class="hero-copy">
+        <h1 data-i18n="title">Integrated Islamic care for older people</h1>
+        <p class="lede" data-i18n="lede">Many older people need help from several places at once. We link them to Islamic bodies, welfare agencies, health services and volunteers in Kedah, and show where those links break.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="scenario.html"><span data-i18n="ctaScenario">Try a case</span><span class="btn-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span></a>
+          <a class="btn btn-ghost" href="app.html"><span class="btn-ai" data-icon="app"></span><span data-i18n="ctaApp">Our Silver App</span></a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <dl class="hero-meta">
+          <div><dt data-i18n="metaGrant">Grant</dt><dd data-i18n="eyebrow">UUM Scale-Up Research Grant 2026</dd></div>
+          <div><dt data-i18n="metaAsk">Amount</dt><dd>RM30,000</dd></div>
+          <div><dt data-i18n="metaDur">Length</dt><dd data-i18n="metaDurV">9 months</dd></div>
+          <div><dt data-i18n="metaPeriod">Dates</dt><dd>1 Nov 2026 – 31 Jul 2027</dd></div>
+          <div><dt data-i18n="metaSite">Location</dt><dd>Kedah</dd></div>
+        </dl>
+        <p class="official"><span data-i18n="officialLabel">Official title:</span> <span>Integrated Islamic Elderly Care Ecosystem: A Proof-of-Concept Study for Kedah State</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap map-wrap" aria-labelledby="consTitle">
+    <figure class="cons map-card">
+      <p class="cons-title" id="consTitle" data-i18n="consTitle">Who can help one older person</p>
+      <div class="need-bar" id="needBar"></div>
+      <svg id="constellation" viewBox="-300 -206 600 452" role="group"></svg>
+      <div class="need-out" id="needOut" aria-live="polite" hidden></div>
+      <div class="cons-legend" id="consLegend"></div>
+      <figcaption data-i18n="consCap">Each dot is an organisation on our list. Confirmed ones sit near the centre. The outer rings still need checking or are only examples. Tap a need to see who can help, or click a dot for details.</figcaption>
+    </figure>
+  </section>
+
+  <div class="wrap">
+    <div class="kpis">
+      <div class="kpi"><b data-count="5">5</b><span data-i18n="kpi1">research objectives</span></div>
+      <div class="kpi"><b data-count="4">4</b><span data-i18n="kpi2">project phases</span></div>
+      <div class="kpi"><b>8–10</b><span data-i18n="kpi3">older people interviewed</span></div>
+      <div class="kpi"><b>15–20</b><span data-i18n="kpi4">people at the design workshop</span></div>
+      <div class="kpi"><b data-count="10">10</b><span data-i18n="kpi5">people on the review panel</span></div>
+    </div>
+    <div class="partners">
+      <span class="label" data-i18n="partnersLabel">Partners</span>
+      <ul class="partner-list" id="partnerList"></ul>
+    </div>
+  </div>
+
+
+  <section class="wrap people-shelf" aria-labelledby="peopleTitle">
+    <div class="shelf-head">
+      <h2 id="peopleTitle" data-i18n="peopleTitle">Everyday help, close to home</h2>
+      <p data-i18n="peopleSub">The people this project is for, and the kinds of help that should reach them.</p>
+    </div>
+    <ul class="shelf">
+      <li class="shelf-card"><span class="shelf-art" data-art="phone" data-tone="paddy"></span><div class="shelf-text"><h3 data-i18n="peopleEasyT">Easy to ask</h3><p data-i18n="peopleEasyB">One phone, big buttons, plain words.</p></div></li>
+      <li class="shelf-card"><span class="shelf-art" data-art="group" data-tone="t2"></span><div class="shelf-text"><h3 data-i18n="peopleFamilyT">Family stays close</h3><p data-i18n="peopleFamilyB">Children can help from near or far.</p></div></li>
+      <li class="shelf-card"><span class="shelf-art" data-art="tea" data-tone="t5"></span><div class="shelf-text"><h3 data-i18n="peopleCompanyT">Someone to talk to</h3><p data-i18n="peopleCompanyB">Volunteers visit and listen.</p></div></li>
+      <li class="shelf-card"><span class="shelf-art" data-art="advice" data-tone="t3"></span><div class="shelf-text"><h3 data-i18n="peopleAdviceT">Clear advice</h3><p data-i18n="peopleAdviceB">Officers explain what help a person can get.</p></div></li>
+      <li class="shelf-card"><span class="shelf-art" data-art="phonehelp" data-tone="t4"></span><div class="shelf-text"><h3 data-i18n="peoplePhoneT">Help with the phone</h3><p data-i18n="peoplePhoneB">Young people show older people how.</p></div></li>
+    </ul>
+  </section>
+
+  <div class="wrap overview-actions">
+    <section class="overview-button-grid" aria-label="Overview sections">
+      <details class="home-drawer">
+            <summary><span><b class="tile" data-icon="overview"></b><span data-i18n="objectivesLabel">What we aim to do</span></span><strong role="heading" aria-level="2" data-i18n="caseTitle">Join help around one older person</strong><i class="drawer-toggle" aria-hidden="true"><b></b></i></summary>
+            <div class="drawer-body"><div class="shead">
+                            <p data-i18n="caseSub">We link agencies so one person gets the right help.</p>
+            </div>
+            <div class="case">
+              <article class="card gap-card">
+                <p class="label" data-i18n="problemTag">The problem</p>
+                <blockquote data-i18n="problemQuote">One older person may need several kinds of help. Each agency only handles its own part.</blockquote>
+                <p data-i18n="problemBody">Kedah already has the agencies and programmes. What's missing is the link between them, so needs slip through when a referral, a rule or short staffing gets in the way.</p>
+              </article>
+              <article class="card resp-card">
+                <p class="label label-paddy" data-i18n="responseTag">Our plan</p>
+                <h3 data-i18n="responseTitle">Five steps to a tested model</h3>
+                <p data-i18n="responseBody">We map who does what, listen to older people, design a model with the agencies, then test it with experts and a small trial.</p>
+                <ol class="steps5">
+                  <li><b data-i18n="step1">Map</b><span data-i18n="step1s">Who does what now</span></li>
+                  <li><b data-i18n="step2">Listen</b><span data-i18n="step2s">What older people need</span></li>
+                  <li><b data-i18n="step3">Design</b><span data-i18n="step3s">A shared model</span></li>
+                  <li><b data-i18n="step4">Test</b><span data-i18n="step4s">Experts and a small trial</span></li>
+                  <li><b data-i18n="step5">Improve</b><span data-i18n="step5s">Ready for other states</span></li>
+                </ol>
+              </article>
+            </div>
+            <div class="why3" id="why"></div></div>
+            </details>
+      <details class="home-drawer">
+            <summary><span><b class="tile" data-icon="network"></b><span data-i18n="teamEyebrow">The team</span></span><strong role="heading" aria-level="2" data-i18n="teamTitle">Six researchers from UUM</strong><i class="drawer-toggle" aria-hidden="true"><b></b></i></summary>
+            <div class="drawer-body"><div class="shead">
+                            <p data-i18n="teamSub">From UUM's School of Economics, Finance and Banking (SEFB). We have studied ageing in Malaysia for over ten years.</p>
+            </div>
+            <ul class="people" id="team"></ul>
+            <h3 class="track-head" data-i18n="trackTitle">We build on four earlier studies. Three of them covered 2,966 people in total.</h3>
+            <ul class="track" id="track"></ul></div>
+            </details>
+      <details class="home-drawer">
+            <summary><span><b class="tile" data-icon="roadmap"></b><span data-i18n="pitchEyebrow">What we will deliver</span></span><strong role="heading" aria-level="2" data-i18n="pitchTitle">Five results, one for each objective</strong><i class="drawer-toggle" aria-hidden="true"><b></b></i></summary>
+            <div class="drawer-body"><div class="shead">
+              <p data-i18n="pitchSub">Each result is ready at the end of its phase.</p>
+            </div>
+            <ol class="outputs">
+              <li class="output"><div class="output-top"><span class="output-no">01</span><span class="due" data-i18n="due3">By month 3</span></div><h3 data-i18n="o1title">Map of current services</h3><p data-i18n="o1body">Who is active, what they offer, how they connect and where the gaps are.</p></li>
+              <li class="output"><div class="output-top"><span class="output-no">02</span><span class="due" data-i18n="due5">By month 5</span></div><h3 data-i18n="o2title">Needs of older people</h3><p data-i18n="o2body">Main themes from interviews with 8–10 Muslim older people.</p></li>
+              <li class="output"><div class="output-top"><span class="output-no">03</span><span class="due" data-i18n="due7">By month 7</span></div><h3 data-i18n="o3title">Joint care model</h3><p data-i18n="o3body">A model built with the agencies that links Islamic support, health care and the community.</p></li>
+              <li class="output"><div class="output-top"><span class="output-no">04</span><span class="due" data-i18n="due8">Month 8</span></div><h3 data-i18n="o4title">Expert review report</h3><p data-i18n="o4body">Expert scores and comments on whether the model is relevant, workable and ready to use.</p></li>
+              <li class="output"><div class="output-top"><span class="output-no">05</span><span class="due" data-i18n="due9">Month 9</span></div><h3 data-i18n="o5title">Final model and plan</h3><p data-i18n="o5body">An improved model and a plan for using it outside Kedah.</p></li>
+            </ol>
+            <div class="impact">
+              <p class="label" data-i18n="impactTag">Our aim</p>
+              <p class="impact-title">Kesejahteraan insan</p>
+              <p data-i18n="impactBody">Joined-up care that fits older people's faith and culture, and lasts.</p>
+            </div></div>
+            </details>
+      <details class="home-drawer">
+            <summary><span><b class="tile" data-icon="evidence"></b><span data-i18n="plansEyebrow">Fits national plans</span></span><strong role="heading" aria-level="2" data-i18n="plansTitle">It supports these national and state plans</strong><i class="drawer-toggle" aria-hidden="true"><b></b></i></summary>
+            <div class="drawer-body"><div class="shead">
+              <p data-i18n="plansSub">As ticked in the application form.</p>
+            </div>
+            <ul class="plans" id="plans"></ul></div>
+            </details>
+    </section>
+  </div>
+</main>
+
+<script src="assets/js/kse-viz.js"></script>
+<script src="assets/js/kse-pages.js"></script>
+</body>
+</html>
+
+
+
+

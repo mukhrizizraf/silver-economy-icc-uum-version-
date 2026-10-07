@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Drawn pictures (kse-art.js). This copy has no photographs and no
+   generated images; every picture is a vector drawing coloured from the
+   page tokens, so it follows each look and light / dark.
+   ========================================================================== */
+
+/* one line scene: a soft round ground and strokes in the scene's colour */
+.art-svg{display:block;width:100%;height:100%;--art:var(--paddy)}
+.art-svg .a-soft{fill:var(--art);opacity:.17}
+.art-svg .a-line{fill:none;stroke:var(--art);stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+/* outside Padi every drawing takes the look's own colour */
+:root[data-look]:not([data-look="padi"]) [data-art],
+:root[data-look]:not([data-look="padi"]) .art-svg{--art:var(--paddy)!important}
+
+/* Overview: the people shelf */
+.shelf-art{position:absolute;inset:0;display:block;background:color-mix(in srgb,var(--art,var(--paddy)) 14%,var(--surface))}
+.shelf-art .art-svg{height:72%;margin-top:4%}
+
+/* page heads: the scene card beside the title */
+.page-story .story-art{position:absolute;inset:0;display:grid;place-items:center;background:color-mix(in srgb,var(--art,var(--paddy)) 14%,var(--surface))}
+.page-story .story-art .art-svg{width:auto;height:80%;aspect-ratio:1}
+
+/* Try a case: the picture on each contact card */
+.tc-art{display:block;width:150px;height:150px;border-radius:16px;background:color-mix(in srgb,var(--art) 12%,var(--surface))}
+@media (max-width:760px){.tc-art{width:100%;height:auto;aspect-ratio:16/10}}
+
+/* Our Silver App: the welcome picture, the contact card and the storyboard */
+.mock-welcome-art{background:color-mix(in srgb,var(--art,var(--paddy)) 14%,var(--surface));overflow:hidden}
+.mock-welcome-art .art-svg{height:100%}
+.mock-contact-art{display:block;height:120px;border-radius:14px;margin-bottom:6px;background:color-mix(in srgb,var(--art,var(--paddy)) 14%,var(--surface))}
+.help-art{display:block;width:100%;aspect-ratio:1;border-radius:18px;background:color-mix(in srgb,var(--art,var(--paddy)) 14%,var(--surface));box-shadow:0 8px 20px -14px rgba(30,30,30,.45)}
+.help-art .art-svg{height:100%}
+#appDone svg{width:100%;height:100%;fill:none;stroke:var(--paddy);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+
+/* the Overview map: the person at the centre, drawn */
+.elder-mark .em-bg{fill:var(--paddy-soft)}
+.elder-mark .a-line{fill:none;stroke:var(--paddy);stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- Overview hero: paddy fields at golden hour ---------- */
+.scene-image .hero-art{display:block;width:100%;height:100%;animation:scene-breathe 14s ease-in-out infinite alternate}
+.hero-art .h-sky1{stop-color:color-mix(in srgb,var(--warn) 24%,var(--bg))}
+.hero-art .h-sky2{stop-color:color-mix(in srgb,var(--paddy-soft) 70%,var(--bg))}
+.hero-art .h-glow{fill:var(--warn);opacity:.13}
+.hero-art .h-sun{fill:color-mix(in srgb,var(--warn) 62%,var(--bg))}
+.hero-art .h-bird{fill:none;stroke:var(--ink-2);stroke-width:3;stroke-linecap:round;opacity:.45}
+.hero-art .h-far{fill:color-mix(in srgb,var(--paddy) 30%,var(--bg))}
+.hero-art .h-near{fill:color-mix(in srgb,var(--paddy) 48%,var(--bg))}
+.hero-art .h-field1{fill:color-mix(in srgb,var(--paddy) 66%,var(--bg))}
+.hero-art .h-field2{fill:color-mix(in srgb,var(--paddy) 84%,var(--ink))}
+.hero-art .h-rows{fill:none;stroke:color-mix(in srgb,var(--paddy) 55%,var(--ink));stroke-width:3;opacity:.35}
+.hero-art .h-trunk{fill:none;stroke:color-mix(in srgb,var(--t2) 45%,var(--ink));stroke-width:9;stroke-linecap:round}
+.hero-art .h-leaf{fill:none;stroke:color-mix(in srgb,var(--paddy) 70%,var(--ink));stroke-width:8;stroke-linecap:round}
+.hero-art .h-wall{fill:color-mix(in srgb,var(--t4) 32%,var(--surface))}
+.hero-art .h-roof{fill:color-mix(in srgb,var(--t2) 85%,var(--ink))}
+.hero-art .h-gable{fill:color-mix(in srgb,var(--t4) 50%,var(--surface))}
+.hero-art .h-win,.hero-art .h-door{fill:color-mix(in srgb,var(--ink) 55%,var(--t2))}
+.hero-art .h-stilt,.hero-art .h-stair{fill:none;stroke:color-mix(in srgb,var(--t2) 45%,var(--ink));stroke-width:7;stroke-linecap:round}
+
+/* the "help reaches people where they live" pulse, drawn in CSS */
+.hero-ios .scene-pulse{display:grid;place-items:center}
+.scene-pulse i{width:10px;height:10px;border-radius:50%;background:var(--paddy);box-shadow:0 0 0 0 color-mix(in srgb,var(--paddy) 50%,transparent);animation:icc-pulse 2.2s ease-out infinite}
+@keyframes icc-pulse{to{box-shadow:0 0 0 12px transparent}}
+@media (prefers-reduced-motion:reduce){.scene-pulse i,.scene-image .hero-art{animation:none}}
+
+/* the drawn scene cards need no dark photo fade */
+.page-story::after{background:none}
+.shelf-card::after{background:linear-gradient(180deg,rgba(5,11,34,0) 55%,rgba(5,11,34,.78))}
