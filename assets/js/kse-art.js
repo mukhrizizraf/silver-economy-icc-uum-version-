@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Silver Economy: drawn pictures
+   i-CareElder: drawn pictures
    Every picture in this copy is a simple vector drawing written here as
    code: no photographs, no generated images. Colours come from the page's
    own tokens, so the drawings follow each look and light / dark.

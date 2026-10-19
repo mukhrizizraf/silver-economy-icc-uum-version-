@@ -24,7 +24,7 @@
 .tc-art{display:block;width:150px;height:150px;border-radius:16px;background:color-mix(in srgb,var(--art) 12%,var(--surface))}
 @media (max-width:760px){.tc-art{width:100%;height:auto;aspect-ratio:16/10}}
 
-/* Our Silver App: the welcome picture, the contact card and the storyboard */
+/* The i-CareElder App: the welcome picture, the contact card and the storyboard */
 .mock-welcome-art{background:color-mix(in srgb,var(--art,var(--paddy)) 14%,var(--surface));overflow:hidden}
 .mock-welcome-art .art-svg{height:100%}
 .mock-contact-art{display:block;height:120px;border-radius:14px;margin-bottom:6px;background:color-mix(in srgb,var(--art,var(--paddy)) 14%,var(--surface))}
@@ -61,6 +61,14 @@
 .scene-pulse i{width:10px;height:10px;border-radius:50%;background:var(--paddy);box-shadow:0 0 0 0 color-mix(in srgb,var(--paddy) 50%,transparent);animation:icc-pulse 2.2s ease-out infinite}
 @keyframes icc-pulse{to{box-shadow:0 0 0 12px transparent}}
 @media (prefers-reduced-motion:reduce){.scene-pulse i,.scene-image .hero-art{animation:none}}
+
+/* Overview: the name above the hero title, and the six-function cards */
+.hero-kicker{margin:0 0 10px;font:650 14px/1 var(--ui);letter-spacing:.08em;color:var(--paddy-ink)}
+.fn-shelf{margin-top:48px}
+.fn-card{min-height:0}
+.fn-go{align-self:end;justify-self:start;margin-top:6px;padding:7px 12px;border-radius:999px;background:var(--paddy-soft);color:var(--paddy-ink);font:600 13.5px/1.2 var(--ui);text-decoration:none}
+.fn-go:hover{background:color-mix(in srgb,var(--paddy) 22%,var(--surface))}
+.fn-go:focus-visible{outline:3px solid var(--paddy);outline-offset:2px}
 
 /* the drawn scene cards need no dark photo fade */
 .page-story::after{background:none}

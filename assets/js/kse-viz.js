@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Silver Economy: visualisations
+   i-CareElder: visualisations
    Hand-built SVG/HTML charts that read from KSE data and theme tokens.
    ========================================================================== */
 (function (K) {

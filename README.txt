@@ -1,5 +1,14 @@
-SILVER ECONOMY DASHBOARD - COPY FOR COPYRIGHT SUBMISSION
+i-CareElder: INTEGRATED ISLAMIC ELDERLY CARE DASHBOARD
+COPY FOR COPYRIGHT SUBMISSION (UUM ICC)
 =======================================================
+
+OWNER AND AUTHORS
+  Owner: Universiti Utara Malaysia.
+  Inventors / authors: Shamzaeffa binti Samsudin (Principal Inventor),
+  Mukhriz Izraf bin Azman Aziz, Shazida Jan binti Mohd Khan, Nur Syakiran
+  Akmal binti Ismail, Sharima Ruwaida binti Abbas, Nur Hafizah binti
+  Mohammad Ismail.
+  Type: copyright, software / system. TRL 3 (proof of concept).
 
 HOW TO OPEN
   1. Unzip this folder anywhere.
@@ -10,7 +19,7 @@ HOW TO OPEN
 
 THE FOUR PAGES
   index.html     Overview: the project, the map of who can help one older
-                 person, partners, the people shelf, aims, team, results
+                 person, the six functions, partners, the people shelf, aims, team, results
                  and the national plans it supports.
   scenario.html  Try a case. The first screen asks what the older person
                  wants to do today: get help, or give.
@@ -29,12 +38,12 @@ THE FOUR PAGES
                  takes money and shows no account numbers.
   data.html      Data blueprint: the data the dashboard needs before it can
                  work for real, with a link to the Excel workbook.
-  app.html       Our Silver App: a 13-screen mock phone app. The help path
+  app.html       The i-CareElder App: a 13-screen mock phone app. The help path
                  follows the Try a case flow; the giving path shows a
                  digital masjid tabung (once, every Friday or every month,
                  private giving, the masjid's own DuitNow QR), volunteering
                  and a giving record kept on the phone.
-  Silver Economy Data Blueprint.xlsx   The workbook, as its own file.
+  i-CareElder Data Blueprint.xlsx   The workbook, as its own file.
 
   All pages work in English and Bahasa Melayu. The round palette button
   (top right) offers eight colour and font looks with Malay names: Padi,
@@ -43,6 +52,25 @@ THE FOUR PAGES
   list of 30 organisations; it never promises help or decides who
   qualifies. The giving places are real, from public pages checked in
   October 2026, but none has agreed yet to take part.
+
+WHERE EACH PART OF THE APPLICATION IS IN THE SOFTWARE
+  The five components (application, Question 5):
+  1 Institutional Ecosystem Mapping   The Overview map (kse-viz.js, with the
+                                      organisation list in kse-data.js) and
+                                      the Data blueprint page and workbook.
+  2 Elderly Needs Identification      Try a case, get help: the questions
+                                      (kse-case-ui.js; case model in
+                                      kse-assist.js).
+  3 Assistance and Resource Matching  Try a case: matching and ranking in
+                                      kse-assist.js; "Who to contact".
+  4 Community Contribution            Try a case, give (kse-give.js) and
+    Opportunities                     the app's giving path (app.html).
+  5 Suggested Elderly Support Plan    The Assistance plan and "Get ready to
+                                      apply" (eligibility, papers, how to
+                                      apply, contacts) in kse-case-ui.js and
+                                      kse-assist.js; the app's help path.
+  The six functions (Question 2) are listed on the Overview page under
+  "Six functions, one dashboard", each linked to the screen that does it.
 
 SOURCE CODE
   There is no build step and nothing is compiled or hidden: the .html, .js
@@ -61,7 +89,7 @@ SOURCE CODE
                             plans, print sheets.
   assets/js/kse-data.js     Content and sample data, Malay text.
   assets/js/kse-shell.js    Navigation, language, looks, light/dark, footer.
-  assets/js/kse-pages.js    Overview and Our Silver App behaviour.
+  assets/js/kse-pages.js    Overview and i-CareElder App behaviour.
   assets/js/kse-viz.js      The Overview map of who can help.
   assets/js/kse-art.js      Every picture, drawn as vector code.
   assets/css/*.css          Styles; fonts.css lists the local fonts.
